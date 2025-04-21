@@ -7,7 +7,7 @@ export class Person {
     constructor(
         public firstName: string, 
         public lastName: string, 
-        private addr?: string = 'No address'
+        private addr: string = 'No address'
     ) {}
 
 }
@@ -44,7 +44,8 @@ const hulk = new Hero('Hulk', 40, 'Hombre verde');
 const iroman2 = new Hero2('Iroman',45,'Tony', tony);
 
 console.log(tony);
-console.log(tony.name);
+console.log(tony.firstName);
+
 console.log(batman);
 console.log(hulk);
 console.log(iroman2);
